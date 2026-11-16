@@ -16,8 +16,8 @@
   --card: #f4f4f6;
   --blue: #2a55c4;
   --blue-wash: #e6edfb;
-  /* Always light, even when the visitor's device is in dark mode. */
-  color-scheme: light;
+  /* Always light, even in dark mode. "only" also stops Chrome's auto-darkening of web pages. */
+  color-scheme: only light;
 }
 
 * { box-sizing: border-box; }
