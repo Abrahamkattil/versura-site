@@ -16,20 +16,8 @@
   --card: #f4f4f6;
   --blue: #2a55c4;
   --blue-wash: #e6edfb;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page: #171716;
-    --ink: #eeedeb;
-    --ink2: #c4c2bf;
-    --muted: #aba9a5;
-    --line: #363635;
-    --card: #262625;
-    --blue: #a9c3fa;
-    --blue-wash: #1e2536;
-  }
+  /* Always light, even when the visitor's device is in dark mode. */
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
