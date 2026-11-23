@@ -45,11 +45,10 @@
     <h2>Bible translations</h2>
     <p>The Berean Standard Bible is built into the app and works without the internet. If you choose another translation, Versura asks that translation's licensed service for the text of each verse you use:</p>
     <ul>
-      <li><strong>ESV</strong> from Crossway's ESV API</li>
-      <li><strong>NIV</strong> from the YouVersion Platform (or API.Bible)</li>
-      <li><strong>NLT</strong> and <strong>NKJV</strong> from API.Bible</li>
+      <li><strong>NIV</strong> and <strong>NASB</strong> from the YouVersion Platform</li>
+      <li><strong>ESV</strong> from Crossway's ESV API, and <strong>NLT</strong> and <strong>NKJV</strong> from API.Bible, through Versura's own relay (run on Cloudflare), which passes each request on and keeps nothing</li>
     </ul>
-    <p>These requests contain only the verse reference, such as “John 3:16”. Like any internet request, the service can see your device's IP address. Nothing that identifies you is sent, and the text is then kept on your iPhone. Each service has its own privacy policy. Not every translation may be available in every version of the app.</p>
+    <p>These requests contain only the verse reference, such as “John 3:16”. Like any internet request, the service or relay can see your device's IP address; the relay uses it only to limit how often one phone can ask, and doesn't store it. Nothing that identifies you is sent, and the text is then kept on your iPhone. Each service has its own privacy policy. Not every translation may be available in every version of the app.</p>
 
     <h2>Learning with others (Together)</h2>
     <p>Together lets you practice alongside people you invite. It works through Apple's iCloud, so it needs you to be signed in to iCloud, and nothing is shared until you invite someone or accept an invite.</p>
