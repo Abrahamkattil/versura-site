@@ -152,8 +152,6 @@ a { color: inherit; text-decoration: none; } a:hover { color: #2A55C4; }
 /* exercises */
 .vd .ex { position: relative; isolation: isolate; margin-top: var(--sec); border-radius: 40px; background: radial-gradient(560px 400px at 50% 64%, rgba(42,85,196,.20), transparent 70%), var(--wash); padding: 90px 24px 70px; text-align: center; overflow: hidden; }
 .vd .ex .exv { position: absolute; left: 50%; top: 40px; width: 900px; margin-left: -450px; opacity: .09; z-index: -1; }
-.vd .ex .ring { position: absolute; left: 50%; top: 560px; width: 760px; height: 760px; margin: -380px 0 0 -380px; border-radius: 50%; border: 1.5px solid rgba(42,85,196,.14); z-index: -1; }
-.vd .ex .ring.r2 { width: 1040px; height: 1040px; margin: -520px 0 0 -520px; border-color: rgba(42,85,196,.08); }
 .vd .ex h2 { font-size: clamp(40px, 4.6vw, 66px); letter-spacing: -.045em; line-height: 1; margin: 14px auto 0; max-width: 820px; text-wrap: balance; }
 .vd .ex > p { font-size: 19px; line-height: 1.55; color: var(--ink2); max-width: 520px; margin: 18px auto 0; }
 .vd .fan { position: relative; height: 600px; margin-top: 50px; display: flex; justify-content: center; align-items: flex-start; }
@@ -241,8 +239,6 @@ a { color: inherit; text-decoration: none; } a:hover { color: #2A55C4; }
   .vd .deck { height: 360px; }
   .vd .ex { padding: 64px 16px 48px; }
   .vd .ex .exv { width: 520px; margin-left: -260px; }
-  .vd .ex .ring { top: 420px; width: 440px; height: 440px; margin: -220px 0 0 -220px; }
-  .vd .ex .ring.r2 { width: 620px; height: 620px; margin: -310px 0 0 -310px; }
   .vd .fan { height: 320px; margin-top: 36px; }
   .vd .fan .phone { width: 128px; border-radius: 24px; padding: 5px; }
   .vd .fan .phone img { border-radius: 20px; }
