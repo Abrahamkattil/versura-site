@@ -59,9 +59,9 @@ a { color: inherit; text-decoration: none; } a:hover { color: #2A55C4; }
   .vd .row .art .phone { animation: vd-slideR linear both; animation-timeline: view(); animation-range: entry 5% cover 35%; }
   .vd .row.flip .art .curve { animation: vd-slideL linear both; animation-timeline: view(); animation-range: entry 5% cover 35%; }
   .vd .row .art::before { animation: vd-disc linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
-  .vd .curve path.line { stroke-dasharray: 760; animation: vd-draw linear both; animation-timeline: view(); animation-range: entry 20% cover 50%; }
+  .vd .curve path.line { stroke-dasharray: 760; animation: vd-draw linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
   .vd .curve .pt { transform-box: fill-box; transform-origin: center; animation: vd-dot linear both; animation-timeline: view(); }
-  .vd .curve .p1 { animation-range: cover 28% cover 34%; } .vd .curve .p2 { animation-range: cover 34% cover 40%; } .vd .curve .p3 { animation-range: cover 40% cover 46%; }
+  .vd .curve .p1 { animation-range: cover 14% cover 19%; } .vd .curve .p2 { animation-range: cover 20% cover 25%; } .vd .curve .p3 { animation-range: cover 26% cover 31%; }
   .vd .deck { view-timeline-name: --deck; }
   .vd .pcard.c1 { animation: vd-deckL linear both; animation-timeline: --deck; animation-range: entry 20% cover 45%; }
   .vd .pcard.c3 { animation: vd-deckR linear both; animation-timeline: --deck; animation-range: entry 20% cover 45%; }
@@ -220,12 +220,15 @@ a { color: inherit; text-decoration: none; } a:hover { color: #2A55C4; }
 
 @keyframes vd-deckLm { from { transform: translate(0, 0) rotate(0deg); } to { transform: translate(-84px, 26px) rotate(-9deg); } }
 @keyframes vd-deckRm { from { transform: translate(0, 0) rotate(0deg); } to { transform: translate(84px, 26px) rotate(9deg); } }
-@keyframes vd-fanLm { from { transform: translateX(0) rotate(0deg) scale(.9); } to { transform: translateX(-104px) rotate(-7deg); } }
-@keyframes vd-fanRm { from { transform: translateX(0) rotate(0deg) scale(.9); } to { transform: translateX(104px) rotate(7deg); } }
+@keyframes vd-fanLm { from { transform: translateX(0) rotate(0deg) scale(.9); } to { transform: translateX(-90px) rotate(-7deg); } }
+@keyframes vd-fanRm { from { transform: translateX(0) rotate(0deg) scale(.9); } to { transform: translateX(90px) rotate(7deg); } }
 @media (max-width: 900px) {
   .vd { --sec: 80px; }
   .vd .card2 { display: none; }
-  .vd .stage .slot { left: 50%; }
+  .vd .stage .slot { left: 50%; margin-left: -125px; bottom: -120px; }
+  .vd .stage .phone { width: 250px; border-radius: 42px; padding: 9px; }
+  .vd .stage .phone img { border-radius: 34px; }
+  .vd .bubble { top: 56px; font-size: 15px; padding: 12px 15px; }
   .vd .row { gap: 32px; }
   .vd .row .art { min-height: 400px; }
   .vd .bird { width: 180px; }
@@ -240,11 +243,11 @@ a { color: inherit; text-decoration: none; } a:hover { color: #2A55C4; }
   .vd .ex .exv { width: 520px; margin-left: -260px; }
   .vd .ex .ring { top: 420px; width: 440px; height: 440px; margin: -220px 0 0 -220px; }
   .vd .ex .ring.r2 { width: 620px; height: 620px; margin: -310px 0 0 -310px; }
-  .vd .fan { height: 360px; margin-top: 36px; }
-  .vd .fan .phone { width: 150px; border-radius: 28px; padding: 6px; }
-  .vd .fan .phone img { border-radius: 23px; }
-  .vd .fan .p1 { display: block; transform: translateX(-104px) rotate(-7deg); animation-name: vd-fanLm; }
-  .vd .fan .p3 { display: block; transform: translateX(104px) rotate(7deg); animation-name: vd-fanRm; }
+  .vd .fan { height: 320px; margin-top: 36px; }
+  .vd .fan .phone { width: 128px; border-radius: 24px; padding: 5px; }
+  .vd .fan .phone img { border-radius: 20px; }
+  .vd .fan .p1 { display: block; transform: translateX(-90px) rotate(-7deg); animation-name: vd-fanLm; }
+  .vd .fan .p3 { display: block; transform: translateX(90px) rotate(7deg); animation-name: vd-fanRm; }
   .vd .fan .p2 { transform: translateY(-12px); }
   .vd .caps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
   .vd .caps span { font-size: 14px; }
@@ -253,7 +256,7 @@ a { color: inherit; text-decoration: none; } a:hover { color: #2A55C4; }
 @media (max-width: 900px) {
   .vd .hero, .vd .try, .vd .row, .vd .close { grid-template-columns: minmax(0, 1fr); }
   .vd .row.flip .text { order: 0; }
-  .vd .stage { height: 600px; }
+  .vd .stage { height: 500px; }
   .vd .list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .vd .links { display: none; }
   .vd .close { padding-right: clamp(28px, 5vw, 80px); }
